@@ -1,0 +1,12 @@
+@import "/src/vars.css";
+.marquee {
+  width: 100%;
+}
+.imagecontainer {
+  width: 100%;
+  display: flex;
+}
+.imagecontainer img {
+  width: 200px;
+  height: 300px;
+}

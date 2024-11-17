@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #f7f7f7;
+  --color-primary-dark: #f5dc21;
+  --color-secondary: #0c356a;
+  --color-tertiary: #1e71dd;
+  --color-dark: #080704;
+  --font-cormorant: "Cormorant Garamond";
+  --font-roboto: "Roboto";
+  --font-poppins: "Poppins";
+}

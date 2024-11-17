@@ -1,0 +1,107 @@
+@import "/src/vars.css";
+.ourBooks {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-primary);
+}
+.headingText {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.headingText h3 {
+  font-family: var(--font-poppins);
+  letter-spacing: 5px;
+  font-size: 1rem;
+  color: rgb(63, 63, 63);
+}
+.headingText p {
+  font-family: var(--font-roboto);
+  width: 50%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(63, 63, 63);
+}
+.bookTabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem;
+}
+.bookTabs ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  list-style: none;
+}
+.bookTabs ul button {
+  font-family: var(--font-roboto);
+  padding: 1rem;
+  width: 110px;
+  border: black solid 3px;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.bookContent {
+  width: 100%;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.bookContentRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.bookImg {
+  width: 200px;
+}
+.selectBook {
+  width: 200px;
+  padding: 1rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: var(--font-roboto);
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .headingText h3 {
+    font-size: 0.7rem;
+  }
+  .headingText p {
+    width: 90%;
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+  .selectBook {
+    display: inline;
+  }
+  .bookTabs ul {
+    display: none;
+  }
+
+  .bookContentRow {
+    flex-direction: column;
+  }
+}

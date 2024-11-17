@@ -1,0 +1,64 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin{
+    id          String @id @default(uuid())
+    name        String
+    email       String @unique
+    password    String
+}
+
+model Book{
+    id          String @id @default(uuid())
+    title       String
+    description String
+    cost        Int
+    category    String
+    createdAt   BigInt
+    photos      String[]
+    author      String
+    bookSold    Int @default(0)
+    cod         Int @default(50)
+    order       Order[]
+}
+
+model Buyer{
+    id          String @id @default(uuid())
+    name        String
+    email       String @unique
+    password    String
+    phone       String @unique
+    address     Address[]
+    orders      Order[]
+}
+
+model Address{
+    id          String @id @default(uuid())
+    line        String
+    city        String
+    state       String
+    pincode     String
+    country     String
+    buyerID     String
+    buyer       Buyer @relation(fields:[buyerID], references: [id], onDelete: Cascade)
+    order       Order[]
+}
+
+model Order{
+    id          String @id @default(uuid())
+    buyerID     String
+    buyer       Buyer @relation(fields:[buyerID], references: [id], onDelete: Cascade)
+    addressID   String
+    address     Address @relation(fields: [addressID], references: [id])
+    bookID      String
+    book        Book @relation(fields:[bookID], references: [id], onDelete: Cascade)
+    createdAt   String
+    orderCost   Int
+    bookQuantity  Int @default(1)
+}

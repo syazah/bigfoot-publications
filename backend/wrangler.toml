@@ -1,0 +1,21 @@
+name = "bigfoot-backend"
+compatibility_date = "2024-09-23"
+type = "webpack" # If you're using TypeScript, set to "webpack"
+
+workers_dev = true
+main = "src/index.ts"
+[env]
+node_compat = true
+
+[env.production.vars]
+  BASE_URL = "https://bigfootpublicationstraditional.in"
+  DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiY2I1ZTFhMDMtNGYyYi00ZjUzLWFiMmUtZWJiOGUzZTk3NTEwIiwidGVuYW50X2lkIjoiM2ExMGQwYzIwN2ViMmUxYjEzYTRmMWM2M2IyNmVjMzYyMmRhNjg1ZTcyZThmOGUxMTVmMmRkZTlhYzQ5MTM2MCIsImludGVybmFsX3NlY3JldCI6IjgxYjY4ZTAxLTNjZGYtNDgyNS1hMDU2LTZhYWQ2ODhmZGU5OSJ9.FSCFIiVqEGgG1OFnwfAqtDiia1hw0OXEfxvxFlXTTRk"
+  JWT_SECRET="ACKNDWOIUFH32R768327z^&%arD657R6532TE6T*&%ae"
+  RAZORPAY_API_KEY="rzp_live_B7TPqzoRwbFb6h"
+  RAZORPAY_API_SECRET="0lxFyMuLXCJBfLHSJUhvaqR5"
+[vars]
+BASE_URL = "https://bigfootpublicationstraditional.in"
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiY2I1ZTFhMDMtNGYyYi00ZjUzLWFiMmUtZWJiOGUzZTk3NTEwIiwidGVuYW50X2lkIjoiM2ExMGQwYzIwN2ViMmUxYjEzYTRmMWM2M2IyNmVjMzYyMmRhNjg1ZTcyZThmOGUxMTVmMmRkZTlhYzQ5MTM2MCIsImludGVybmFsX3NlY3JldCI6IjgxYjY4ZTAxLTNjZGYtNDgyNS1hMDU2LTZhYWQ2ODhmZGU5OSJ9.FSCFIiVqEGgG1OFnwfAqtDiia1hw0OXEfxvxFlXTTRk"
+JWT_SECRET="ACKNDWOIUFH32R768327z^&%arD657R6532TE6T*&%ae"
+RAZORPAY_API_KEY="rzp_live_B7TPqzoRwbFb6h"
+RAZORPAY_API_SECRET="0lxFyMuLXCJBfLHSJUhvaqR5"

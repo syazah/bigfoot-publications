@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Book" ADD COLUMN     "cod" INTEGER NOT NULL DEFAULT 50;

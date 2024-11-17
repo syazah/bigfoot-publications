@@ -1,0 +1,92 @@
+@import "/src/vars.css";
+.overviewContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: 2rem;
+}
+.overviewContainer h3 {
+  letter-spacing: 5px;
+  font-family: var(--font-poppins);
+}
+.overviewContainer h1 {
+  font-size: 3rem;
+}
+
+.Overview {
+  width: 100%;
+  display: flex;
+  padding: 3rem;
+  background-color: var(--color-primary);
+  gap: 1rem;
+}
+.Overview ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 40%;
+  gap: 1rem;
+}
+.Overview li {
+  width: 100%;
+  background-color: var(--color-secondary);
+  padding-left: 1rem;
+  cursor: pointer;
+  color: white;
+}
+.descBox {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.descBox p {
+  font-family: var(--font-roboto);
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  @import "/src/vars.css";
+  .overviewContainer {
+    padding: 1rem;
+  }
+  .overviewContainer h3 {
+    text-align: center;
+  }
+  .overviewContainer h1 {
+    font-size: 3rem;
+  }
+
+  .Overview {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+  .Overview ul {
+    width: 100%;
+  }
+  .Overview li {
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding-left: 1rem;
+    cursor: pointer;
+  }
+  .descBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .descBox p {
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1rem;
+  }
+}

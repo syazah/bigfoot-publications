@@ -1,0 +1,185 @@
+.AuthorHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 8rem;
+  scroll-snap-align: center;
+}
+.AuthorHeaderContainer h3 {
+  font-family: "Poppins";
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+.AuthorHeaderContainer h1 {
+  font-family: "Cormorant Garamond";
+  font-size: 5rem;
+}
+.AuthorHeaderContainer p {
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 0.8rem;
+  width: 50%;
+}
+.AuthorHeaderImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.AuthorHeaderImageContainer img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.authorContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+.authorContentRow {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.authorCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height: 300px;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  cursor: pointer;
+  padding: 10px 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  padding-bottom: 1rem;
+}
+.authorCard h3 {
+  font-size: 1.6rem;
+}
+.authorCard p {
+  text-align: justify;
+  font-family: var(--font-roboto);
+}
+
+.imageContainer {
+  background-image: url("/AUTHORS/ADYAMANAN.png");
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imageContainer2 {
+  background-image: url("/AUTHORS/EKATADEB.png");
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imageContainer3 {
+  background-image: url("/AUTHORS/JAHNVVIKUUMAR.png");
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imageContainer4 {
+  background-image: url("/AUTHORS/MADHURISUMA.png");
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imageContainer5 {
+  background-image: url("/AUTHORS/PRIYANKAKUUMAR.png");
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imageContainer6 {
+  background-image: url("/AUTHORS/RAJATK.png");
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imageContainer7 {
+  background-image: url("/AUTHORS/MARIETTAPEREIRA.png");
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.imageContainer8 {
+  background-image: url("/AUTHORS/HIMANSHUCHHATE.png");
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .AuthorHeaderContainer {
+    padding: 5rem 0rem;
+  }
+  .AuthorHeaderContainer h1 {
+    font-family: "Cormorant Garamond";
+    font-size: 4rem;
+  }
+  .AuthorHeaderContainer p {
+    text-align: justify;
+    width: 90%;
+  }
+  .AuthorHeaderImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .AuthorHeaderImageContainer img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+  }
+
+  .authorContentRow {
+    flex-direction: column;
+    width: 100%;
+  }
+  .authorCard {
+    width: 100%;
+    height: 300px;
+    gap: 20px;
+  }
+  .authorCard h3 {
+    font-size: 2rem;
+  }
+  .authorCard div {
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+  }
+}

@@ -1,0 +1,134 @@
+@import "/src/vars.css";
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+}
+.close {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+.close button {
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+.popupcontainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border: solid black 3px;
+}
+.popupcontainer h1,
+h3 {
+  font-family: var(--font-roboto);
+}
+.popform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.popform input {
+  width: 80%;
+  font-weight: 400;
+  padding: 0.8rem;
+  border: none;
+  background-color: rgb(221, 221, 221);
+}
+.popform button {
+  width: 200px;
+  padding: 0.5rem 0rem;
+  font-family: var(--font-roboto);
+  font-size: 1rem;
+  background-color: var(--color-primary-dark);
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.popform button:hover {
+  background-color: var(--color-tertiary);
+}
+.main video {
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .popupcontainer {
+    width: 90%;
+    padding-bottom: 2rem;
+  }
+  .popupcontainer h1,
+  h3 {
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+  }
+  .popform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .popform input {
+    width: 80%;
+    font-weight: 400;
+    padding: 0.8rem;
+    border: none;
+    background-color: rgb(221, 221, 221);
+  }
+  .popform button {
+    width: 200px;
+    padding: 0.5rem 0rem;
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    background-color: var(--color-primary-dark);
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  .popform button:hover {
+    background-color: var(--color-tertiary);
+  }
+  .main video {
+    width: 200px;
+  }
+}

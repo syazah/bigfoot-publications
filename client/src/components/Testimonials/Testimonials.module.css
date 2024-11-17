@@ -1,0 +1,55 @@
+@import "/src/vars.css";
+.testimonials {
+  width: 100%;
+  background-color: var(--color-secondary);
+  padding: 0rem 2rem;
+  padding-bottom: 6rem;
+}
+.revcard {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 600px;
+  padding: 2rem;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+}
+.quotepic {
+  width: 24px;
+  padding: 4px;
+}
+.realpic {
+  width: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: solid black 3px;
+}
+.revcard h4 {
+  font-family: var(--font-roboto);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.revcard h3 {
+  font-family: var(--font-roboto);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-secondary);
+}
+.revcard h5 {
+  font-family: var(--font-roboto);
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .revcard h5 {
+    font-family: var(--font-roboto);
+    font-size: 0.8rem;
+  }
+}

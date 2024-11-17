@@ -1,0 +1,89 @@
+@import "/src/vars.css";
+.navbar {
+  width: 100%;
+  position: sticky;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  z-index: 99999;
+  background-color: var(--color-primary-dark);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.logo div {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.logo div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-roboto);
+  font-size: 0.9rem;
+  color: black;
+}
+.headericons {
+  width: 0.9rem;
+}
+.logo img {
+  width: 50px;
+}
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.navLink {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 600;
+}
+.toggleMenuContainer {
+  display: none;
+}
+:global(.active) {
+  text-decoration: underline;
+}
+/*===============================================================*/
+/*MOBILE*/
+@media (max-width: 768px) {
+  .navItem {
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    padding: 2rem;
+    background-color: var(--color-primary-dark);
+  }
+  .toggleMenuContainer {
+    display: flex;
+  }
+  .logo div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-roboto);
+    font-size: 0.6rem;
+    color: black;
+  }
+  .headericons {
+    width: 0.5rem;
+  }
+}
+
+/*MOBILE*/

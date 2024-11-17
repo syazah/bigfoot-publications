@@ -1,0 +1,61 @@
+.main {
+  width: 100%;
+  height: 100%;
+}
+.flowDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+.flowDiv h1 {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+.flowDiv img {
+  width: 40%;
+}
+.flowDivContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.flowDivContainer h1 {
+  font-size: 3rem;
+}
+.flowDivContainer img {
+  width: 100%;
+  border: solid black 3px;
+  box-shadow: 10px 10px black;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.flowDivContainer img:hover {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .flowDiv {
+    padding: 1rem;
+  }
+  .flowDiv h1 {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+  .flowDivContainer {
+    padding: 1rem;
+  }
+  .flowDivContainer h1 {
+    font-size: 1rem;
+  }
+  .flowDiv img {
+    width: 100%;
+  }
+}

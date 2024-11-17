@@ -1,0 +1,134 @@
+.knowbetter {
+  padding: 5rem;
+  background-color: var(--color-primary);
+}
+.headText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headText h1 {
+  font-size: 3rem;
+}
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+.buttonRow h3 {
+  font-size: 1.5rem;
+  font-family: var(--font-poppins);
+}
+.buttonRow option {
+  font-family: var(--font-roboto);
+}
+.buttonRow select {
+  font-family: var(--font-roboto);
+  width: 30%;
+  padding: 1rem;
+  border: solid black 3px;
+}
+
+.detailList {
+  display: flex;
+}
+.detailelements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.knowImg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.knowImg img {
+  width: 90%;
+}
+.detailList li {
+  width: 100%;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+}
+.detailList li h2 {
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  text-decoration: underline;
+}
+.detailList li p {
+  font-family: var(--font-roboto);
+}
+
+@media (max-width: 768px) {
+  .knowbetter {
+    padding: 1rem;
+  }
+  .headText h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .buttonRow {
+    padding: 1rem;
+    gap: 0rem;
+    flex-direction: column;
+  }
+  .buttonRow h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .buttonRow option {
+    font-family: var(--font-roboto);
+  }
+  .buttonRow select {
+    font-family: var(--font-roboto);
+    width: 100%;
+    padding: 1rem;
+    border: solid black 3px;
+  }
+
+  .detailList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .detailList li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .detailList li h2 {
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+  }
+  .detailList li p {
+    font-family: var(--font-roboto);
+  }
+  .detailList {
+    display: flex;
+    flex-direction: column;
+  }
+  .detailelements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .knowImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .knowImg img {
+    width: 90%;
+  }
+}

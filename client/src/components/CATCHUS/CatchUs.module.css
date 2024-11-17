@@ -1,0 +1,65 @@
+@import "/src/vars.css";
+.headSliders {
+  width: 100%;
+}
+.platformMain {
+  width: 100%;
+  background-color: var(--color-secondary);
+  color: white;
+  padding-bottom: 5rem;
+}
+.CarouselSwipe {
+  padding: 0rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.platformImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.platformImage img {
+  width: 200px;
+}
+.platform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  padding-bottom: 2rem;
+}
+.platform h3 {
+  font-family: var(--font-poppins);
+  letter-spacing: 5px;
+}
+.platform h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  @import "/src/vars.css";
+  .CarouselSwipe {
+    padding: 1rem;
+  }
+  .platform {
+    padding: 1rem;
+  }
+  .platform h3 {
+    text-align: center;
+  }
+  .platform h1 {
+    font-size: 2rem;
+  }
+  .platformImage {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .platformImage img {
+    width: 100%;
+  }
+}

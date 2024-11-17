@@ -1,0 +1,96 @@
+@import "/src/vars.css";
+.mainBook {
+  padding: 3rem;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainBook h3 {
+  font-family: var(--font-poppins);
+  letter-spacing: 5px;
+}
+.mainBook h1 {
+  font-size: 3rem;
+}
+.mainBookRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+.mainBookImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.mainBookImg img {
+  width: 100%;
+}
+.textContent {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.textContent p {
+  font-family: var(--font-poppins);
+  font-size: 0.8rem;
+  text-align: justify;
+}
+.textContent a {
+  background-color: var(--color-tertiary);
+  padding: 1rem;
+  color: white;
+  font-family: var(--font-roboto);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.textContent a:hover {
+  background-color: brown;
+}
+@media (max-width: 768px) {
+  .mainBook {
+    padding: 1rem;
+  }
+  .mainBook h3 {
+    font-size: 0.8rem;
+  }
+  .mainBook h1 {
+    font-size: 1rem;
+  }
+  .mainBookRow {
+    flex-direction: column-reverse;
+  }
+  .mainBookImg {
+    width: 100%;
+  }
+  .mainBookImg img {
+    width: 200px;
+  }
+  .textContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .textContent p {
+    font-family: var(--font-poppins);
+    font-size: 0.8rem;
+  }
+  .textContent a {
+    background-color: var(--color-tertiary);
+    padding: 1rem;
+    color: white;
+    font-family: var(--font-roboto);
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .textContent a:hover {
+    background-color: brown;
+  }
+}

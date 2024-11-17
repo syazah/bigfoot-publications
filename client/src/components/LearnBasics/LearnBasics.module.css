@@ -1,0 +1,46 @@
+@import "/src/vars.css";
+.basic {
+  padding: 5rem;
+}
+.basicText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.basicText h3 {
+  font-family: var(--font-poppins);
+  letter-spacing: 5px;
+}
+.basicText h1 {
+  font-size: 3rem;
+}
+.basic ul li h2 {
+  font-family: var(--font-roboto);
+}
+.basic ul li p {
+  font-family: var(--font-roboto);
+}
+
+@media (max-width: 768px) {
+  .basic {
+    padding: 1.5rem 0.5rem 5rem 0.5rem;
+  }
+  .basicText h3 {
+    font-family: var(--font-poppins);
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  .basicText h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .basic ul li h2 {
+    font-family: var(--font-roboto);
+    text-align: center;
+  }
+  .basic ul li p {
+    font-family: var(--font-roboto);
+    text-align: justify;
+  }
+}

@@ -1,0 +1,362 @@
+@import "/src/vars.css";
+.AnthologyHeader {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-dark);
+}
+.AnthologyHeader h3 {
+  font-family: var(--font-poppins);
+  letter-spacing: 5px;
+}
+.AnthologyHeader h1 {
+  font-size: 3rem;
+}
+.anthoRow {
+  width: 100%;
+  display: flex;
+  padding-top: 3rem;
+  gap: 1rem;
+}
+.anthotext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  width: 50%;
+}
+.anthohead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  padding: 1rem;
+  border: solid black 3px;
+  background-color: var(--color-primary);
+  color: black;
+}
+.anthotext ul {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  border: black solid 3px;
+  gap: 1rem;
+  background-color: var(--color-primary);
+}
+.anthotext ul li h6 {
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+}
+.anthotext ul li a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: rgb(0, 0, 126);
+  cursor: pointer;
+  gap: 0.5rem;
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+}
+.anthoRow h3 {
+  font-size: 2rem;
+}
+.anthoRow h4 {
+  font-size: 1.5rem;
+  font-style: bold;
+  font-family: var(--font-roboto);
+}
+.anthoRow p {
+  font-family: var(--font-roboto);
+}
+.anthoRow button {
+  border: none;
+  width: 300px;
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-roboto);
+  box-shadow: 5px 5px #ffb60c;
+}
+.anthoRow button:hover {
+  color: white;
+  box-shadow: none;
+}
+.anthoimg {
+  width: 50%;
+}
+.anthoimg img {
+  width: 100%;
+}
+.anthoimg video {
+  width: 100%;
+}
+.mainForm {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.mainForm button {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+}
+.mainInput {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainInput label {
+  font-family: var(--font-roboto);
+  font-weight: 400;
+}
+.mainInput input {
+  width: 100%;
+  padding: 1rem;
+  font-family: var(--font-roboto);
+  font-weight: 400;
+}
+.mainInput textarea {
+  width: 100%;
+  font-family: var(--font-roboto);
+  padding: 1rem;
+}
+.mainInput select {
+  width: 70%;
+  border: none;
+  padding: 1rem;
+  font-family: var(--font-roboto);
+}
+.mainInput option {
+  font-family: var(--font-roboto);
+}
+/*==================*/
+.goinganthcontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary);
+  padding: 3rem 0rem;
+}
+.cardRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 3rem;
+  border: solid black 3px;
+  background-color: var(--color-primary-dark);
+}
+.card h2 {
+  font-family: var(--font-roboto);
+}
+.card h3 {
+  font-family: var(--font-poppins);
+  padding: 1rem;
+}
+.goinganth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.selectRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.goinganth h1 {
+  font-size: 3rem;
+}
+.selectRow select {
+  width: 200px;
+  border: none;
+  padding: 1rem;
+  border: solid 3px black;
+  font-family: var(--font-roboto);
+}
+.textanth {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: start;
+  align-items: start;
+  padding: 5rem;
+}
+
+.textanth ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-roboto);
+  font-weight: 600;
+  font-size: 3rem;
+  gap: 1rem;
+}
+.benHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.textanth ul li {
+  width: 100%;
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .AnthologyHeader {
+    padding: 1rem;
+  }
+  .AnthologyHeader h3 {
+    font-size: 1rem;
+  }
+  .AnthologyHeader h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .anthoRow {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .anthotext {
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .anthotext ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .anthoRow button {
+    width: 200px;
+  }
+  .anthoimg {
+    width: 100%;
+  }
+  .anthoimg img {
+    width: 100%;
+  }
+  .anthoimg video {
+    width: 100%;
+  }
+  .mainForm {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  .mainForm button {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+  }
+  /*==================*/
+
+  .goinganth {
+    padding: 1rem;
+  }
+  .selectRow {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .goinganth h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .selectRow select {
+    width: 200px;
+    border: none;
+    padding: 1rem;
+    border: solid 3px black;
+    font-family: var(--font-roboto);
+  }
+  .goinganthcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    padding: 3rem 0rem;
+  }
+  .cardRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 3rem;
+    border: solid black 3px;
+    background-color: var(--color-primary-dark);
+  }
+  .card h2 {
+    text-align: center;
+    font-family: var(--font-roboto);
+  }
+  .card h3 {
+    text-align: center;
+    font-family: var(--font-roboto);
+    padding: 1rem;
+  }
+  .selectRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .goinganth h1 {
+    font-size: 2rem;
+  }
+  .selectRow select {
+    width: 200px;
+    border: none;
+    padding: 1rem;
+    border: solid 3px black;
+    font-family: var(--font-roboto);
+  }
+  .textanth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .textanth ul {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .textanth ul li {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
