@@ -46,7 +46,6 @@ function OrderPage() {
   const date =
     orderDetail != null &&
     new Date(Number(orderDetail.createdAt)).toLocaleString();
-  console.log(orderDetail);
   return (
     <div className="w-full h-[100vh] flex flex-col justify-start items-start">
       {orderDetail === null ? (

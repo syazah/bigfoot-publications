@@ -2,12 +2,12 @@ import styles from "./MainBook.module.css";
 function MainBook() {
   return (
     <div className={styles.mainBook}>
-      <h3>OVER 25000+ COPIES SOLD</h3>
+      <h3 className="">OVER 25000+ COPIES SOLD</h3>
       <h1>Daughters Of The Brothel</h1>
       <h4> Stories from Delhi's Red-light District</h4>
       <div className={styles.mainBookRow}>
         <div className={styles.textContent}>
-          <h2> About The Book</h2>
+          <h2 className="font-semibold text-xl"> About The Book</h2>
           <p>
             “My nath utrai (Taking off the nose ring) was performed when I was
             twelve or thirteen. The initial days were tough but now it gives me

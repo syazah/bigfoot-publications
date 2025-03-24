@@ -187,11 +187,12 @@
   }
   .SlideOneImageContainer {
     width: 100%;
-    background-size: 100px;
+    background-size: 300px;
     align-items: end;
+    padding: 0;
   }
   .SlideOneImageContainer img {
-    width: 300px;
+    width: 600px;
   }
 
   .SlideTwoImageContainer {

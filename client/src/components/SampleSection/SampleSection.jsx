@@ -88,7 +88,7 @@ function Sample({ content }) {
         </div>
 
         <div className={styles.launchContent}>
-          <video autoPlay muted loop src={content[0].vid} />
+          <video controls muted loop src={content[0].vid} />
         </div>
       </div>
       <div className={styles.launch}>
@@ -114,7 +114,7 @@ function Sample({ content }) {
           <h1>{content[1].heading}</h1>
         </div>
         <div className={styles.launchContent}>
-          <video autoPlay muted loop src={content[1].vid} />
+          <video controls muted loop src={content[1].vid} />
         </div>
       </div>
     </div>
@@ -122,13 +122,41 @@ function Sample({ content }) {
 }
 function Sample2({ content }) {
   return (
-    <div style={{ marginTop: "3rem" }} className={styles.sampleRow}>
+    <div className={"flex md:flex-row flex-col justify-center items-center gap-4 mt-4 w-full"}>
       <div className={styles.launch}>
         <div className={styles.launchText}>
           <h1>{content[4].heading}</h1>
         </div>
         <div className={styles.launchContent}>
-          <video autoPlay muted loop src={content[4].vid} />
+          <video controls muted loop src={content[4].vid} />
+        </div>
+      </div>
+      <div className={styles.launch}>
+        <div className={styles.launchText}>
+          <h1>{content[5].heading}</h1>
+        </div>
+        <div className={styles.launchContent}>
+          <img src={content[5].vid} />
+        </div>
+        <p className="text-sm font-normal font-poppins">
+          {content[5].subHeading}
+        </p>
+      </div>
+      <div className={styles.launch}>
+        <div className={styles.launchText}>
+          <h1>{content[6].heading}</h1>
+        </div>
+
+        <div className={styles.launchContent}>
+          <video controls muted src={content[6].vid} />
+        </div>
+      </div>
+      <div className={styles.launch}>
+        <div className={styles.launchText}>
+          <h1>{content[7].heading}</h1>
+        </div>
+        <div className={styles.launchContent}>
+          <video controls muted loop src={content[7].vid} />
         </div>
       </div>
     </div>

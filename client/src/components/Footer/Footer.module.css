@@ -28,6 +28,7 @@
   align-items: start;
   color: white;
   padding: 2rem;
+  gap: 10px;
 }
 .footerColumn {
   width: 20%;

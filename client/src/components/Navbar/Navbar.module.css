@@ -51,6 +51,13 @@
   color: black;
   font-weight: 600;
 }
+.iconsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+}
 .toggleMenuContainer {
   display: none;
 }

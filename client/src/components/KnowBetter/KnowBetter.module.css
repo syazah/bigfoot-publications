@@ -1,11 +1,12 @@
 .knowbetter {
   padding: 5rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 .headText {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .headText h1 {
   font-size: 3rem;
@@ -40,6 +41,9 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  color: white;
+  gap: 8px;
+  margin-top: 20px;
 }
 .knowImg {
   width: 50%;

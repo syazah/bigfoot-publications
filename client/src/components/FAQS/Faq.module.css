@@ -86,24 +86,24 @@
     text-align: center;
   }
   .faqContainer h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   .headerPara {
-    width: 90%;
+    width: 80%;
   }
   .faqContent {
     flex-direction: column-reverse;
     padding: 0rem;
   }
   .faqContainer ul {
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
   }
   .faqContainer li {
     width: 100%;
   }
   .faqContainer li h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
   }
   .faqContent {

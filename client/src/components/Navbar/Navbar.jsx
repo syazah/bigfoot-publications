@@ -86,18 +86,13 @@ function NavItems() {
         </NavLink>
       </li>
       <li>
-        <NavLink className={styles.navLink} to="/blogs">
-          Blogs
-        </NavLink>
-      </li>
-      <li>
         <NavLink className={styles.navLink} to="/anthology">
           Anthology
         </NavLink>
       </li>
       <li>
         <NavLink className={styles.navLink} to="/order">
-          Order
+          Pre-Order
         </NavLink>
       </li>
       <li>

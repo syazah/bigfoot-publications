@@ -23,6 +23,7 @@ import KnowBetter from "../components/KnowBetter/KnowBetter";
 import { useEffect } from "react";
 import NewsCov from "../components/NewsCov/NewsCov";
 import Popup from "../components/Popup/Popup";
+import Community from "../components/Community";
 function Home() {
   return (
     <div className={styles.main}>
@@ -32,11 +33,12 @@ function Home() {
       <Navbar />
       <HeaderSection />
       <NewsSection />
+      <Community />
       <HeadSlider />
       <OurBooks />
-      <div className={styles.flowDivContainer}>
-        <div  className={styles.flowDiv}>
-          <img src="downourbooks.png" />
+      <div className="md:flex justify-center items-center">
+        <div className="">
+          <img className="md:scale-75 shadow-2xl" src="downourbooks.png" />
         </div>
       </div>
       <Highlights />

@@ -88,7 +88,7 @@ function AnthologyHeader() {
               <img src="/ANTHO/anthohead.png" />
             )
           ) : (
-            <video autoPlay muted loop src="/HEADSLIDES/ANTHO.mp4" />
+            <video controls muted loop src="/HEADSLIDES/ANTHO.mp4" />
           )}
         </div>
       </div>

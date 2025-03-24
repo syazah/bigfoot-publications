@@ -17,9 +17,10 @@ function FooterHeader() {
       <h2>Bigfoot Publications India </h2>
       <p>
         Bigfoot publications an international publishing house based in India &
-        Sri Lanka aimed at providing hassle free publishing experience to
-        budding Authors & writers. Not just online we provide offline
-        distributions to Oxford, Crossword, Bahrisons, Kitaab Khana much more
+        United Kingdom and Malaysia aimed at providing hassle free publishing
+        experience to budding Authors & writers. Not just online we provide
+        offline distributions to Oxford, Crossword, Bahrisons, Kitaab Khana much
+        more
       </p>
     </div>
   );
@@ -28,11 +29,11 @@ function FooterHeader() {
 function FooterRow() {
   return (
     <div className={styles.footerRow}>
-      <div className={styles.footerColumn}>
-        <img src="LOGO3.png" />
+      <div className={"flex w-full md:w-1/4 p-4"}>
+        <img src="footerlogo.png" />
       </div>
-      <div className={styles.footerColumn}>
-        <h3>Links</h3>
+      <div className={"flex flex-col w-full md:w-1/6"}>
+        <h3 className="font-semibold text-xl md:font-normal md:text-base">Links</h3>
         <Link className={styles.linkFooter} to="/">
           Home
         </Link>
@@ -54,15 +55,12 @@ function FooterRow() {
         <Link className={styles.linkFooter} to="/anthology">
           Anthology
         </Link>
-        <Link
-          className={styles.linkFooter}
-          to="https://bigfootpublicationstraditional.in/"
-        >
+        <Link className={styles.linkFooter} to="/order">
           Order Books
         </Link>
       </div>
 
-      <div className={styles.footerColumn}>
+      <div className={"flex flex-col w-full md:w-1/6 gap-2"}>
         <h3>Follow Us</h3>
         <a href="https://www.instagram.com/bigfoot_publications/">
           <Instagram className={styles.icon} />
@@ -79,22 +77,23 @@ function FooterRow() {
         <a href="https://linktr.ee/BigFootPublications">LINKTREE</a>
       </div>
 
-      <div className={styles.footerColumn}>
+      <div
+        className={"flex flex-col gap-2 w-full md:w-1/4 justify-start items-start p-2"}
+      >
         <h3>Address</h3>
         <h4>
           📌 1st Floor, BSR Building, Daulatabad Flyover, Phase 2 Gurugram,
           122001, HR, India, 110059, Delhi, India
         </h4>
-        <h4>
-          📌 171/1 Panchikawatte Road, Colombo, Sri Lanka (+94) ( 011) 2438236
-        </h4>
+        <h4>📌 UK: Office 21, High Street North, East Ham E6 1HZ, London UK</h4>
+        <h4>📌 Malaysia: 1, Jalan Tengku Ampuan Zabedah C9/C, Unit 17.2</h4>
       </div>
 
-      <div className={styles.socialLinkContact}>
+      <div className={"flex flex-col font-poppins w-full md:w-1/4 gap-4"}>
         <h3>Contact Us </h3>
-        <h4>📞 (IN) +91 86848 69690</h4>
-        <h4>📞 (IN) +91 120 466 2941</h4>
-        <h4>📞 (+94) ( 011) 2439454</h4>
+        <h4 className="font-poppins text-sm">📞 (IN) +91 86848 69690</h4>
+        <h4 className="font-poppins text-sm">📞 (IN) +91 120 466 2941</h4>
+        <h4 className="font-poppins text-sm">📞 (+94) ( 011) 2439454</h4>
         <a download href="privacy.pdf">
           🔏 PRIVACY POLICY{" "}
         </a>
@@ -115,9 +114,14 @@ function FooterRow2() {
             frameBorder="0"
             scrolling="no"
           ></iframe>
-          <video autoPlay muted loop src="/sampletour.mp4" />
+          <video
+            className="w-full h-full"
+            controls
+            muted
+            src="/sampletour.mp4"
+          />
         </div>
-        <button>VISIT US</button>
+        <button className="text-black">VISIT US</button>
       </div>
     </div>
   );

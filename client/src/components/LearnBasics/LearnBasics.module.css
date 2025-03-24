@@ -7,19 +7,24 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
 }
 .basicText h3 {
   font-family: var(--font-poppins);
   letter-spacing: 5px;
+  color:white
 }
 .basicText h1 {
   font-size: 3rem;
+  color: white;
 }
 .basic ul li h2 {
   font-family: var(--font-roboto);
+  color: white;
 }
 .basic ul li p {
   font-family: var(--font-roboto);
+  color: white;
 }
 
 @media (max-width: 768px) {

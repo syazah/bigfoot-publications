@@ -42,10 +42,10 @@
 @media (max-width: 768px) {
   @import "/src/vars.css";
   .CarouselSwipe {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .platform {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .platform h3 {
     text-align: center;
@@ -54,12 +54,12 @@
     font-size: 2rem;
   }
   .platformImage {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
   }
 
   .platformImage img {
-    width: 100%;
+    width: 100px;
   }
 }

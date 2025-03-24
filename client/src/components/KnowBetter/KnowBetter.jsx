@@ -306,11 +306,18 @@ function KnowBetter() {
   return (
     <div className={styles.knowbetter}>
       <div className={styles.headText}>
-        <h1>&uArr; WHAT THESE SERVICES MEAN ? &uArr;</h1>
+        <h1>WHAT THESE SERVICES MEAN ?</h1>
       </div>
-      <div className={styles.buttonRow}>
-        <h3>Select The Type Of Service</h3>
-        <select onChange={(e) => handleSelectChange(e.target.value)}>
+      <div
+        className={
+          "flex flex-col md:flex-row justify-center items-center md:p-4 gap-4"
+        }
+      >
+        <h3 className="text-2xl text-white">Select The Type Of Service</h3>
+        <select
+          className="outline-none border-none w-full md:w-1/3 font-poppins p-2 bg-[#FFF] text-black rounded-full shadow-[5px_5px_#000]"
+          onChange={(e) => handleSelectChange(e.target.value)}
+        >
           <option value={0}>LEGAL</option>
           <option value={1}>SUPPORT</option>
           <option value={2}>DESIGNING</option>
@@ -334,8 +341,10 @@ function KnowBetter() {
 function Details({ data }) {
   return (
     <li>
-      <h2>&bull; {data.title}</h2>
-      <p>{data.desc}</p>
+      <h2 className="text-base font-semibold font-poppins">
+        &bull; {data.title}
+      </h2>
+      <p className="text-zinc-300">{data.desc}</p>
     </li>
   );
 }

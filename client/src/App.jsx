@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Faqs from "./pages/Faqs";
@@ -19,11 +19,13 @@ import { useContext, useEffect, useState } from "react";
 import { AdminMainContext } from "./AdminContext";
 import OrderPage from "./components/AdminPanel/OrderPage";
 import ResetPassword from "./pages/ResetPassword";
+import ScrollToTop from "./ScrollToTop";
 function App() {
   const { adminPresent } = useContext(AdminMainContext);
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />

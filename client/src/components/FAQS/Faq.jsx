@@ -117,7 +117,7 @@ function Faq() {
               )
           )}
         </ul>
-        <ul>
+        <ul className="-mt-10 md:mt-0">
           {questionData.map(
             (data) =>
               data.id > 7 && (

@@ -48,7 +48,7 @@ function BookPage() {
           }
         } else {
           setCanBuyBook(false);
-          setTimeRemaining("Expired");
+          setTimeRemaining("Available On Amazon");
         }
       } else {
         alert(data.message);

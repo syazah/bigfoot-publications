@@ -44,7 +44,7 @@ function CatchUs() {
       <div className={styles.CarouselSwipe}>
         <Swiper
           modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-          slidesPerView={windowSize.innerWidth > 768 ? 4 : 1}
+          slidesPerView={windowSize.innerWidth > 768 ? 4 :2}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
