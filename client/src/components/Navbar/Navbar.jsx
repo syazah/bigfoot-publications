@@ -100,6 +100,11 @@ function NavItems() {
           Company
         </NavLink>
       </li>
+      <li>
+        <NavLink className={styles.navLink} to="/socialMedia">
+          Social Media
+        </NavLink>
+      </li>
     </ul>
   );
 }
