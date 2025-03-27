@@ -20,6 +20,7 @@ import { AdminMainContext } from "./AdminContext";
 import OrderPage from "./components/AdminPanel/OrderPage";
 import ResetPassword from "./pages/ResetPassword";
 import ScrollToTop from "./ScrollToTop";
+import SocialMedia from "./pages/SocialMedia";
 function App() {
   const { adminPresent } = useContext(AdminMainContext);
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/packages" element={<Packages />} />
         <Route path="/about" element={<About />} />
         <Route path="/company" element={<About />} />
+        <Route path="/socialMedia" element={<SocialMedia />} />
         <Route path="/anthology" element={<Anthology />} />
         <Route path="/excel" element={<BlogExcel />} />
         <Route path="/mystery" element={<BlogMystery />} />
