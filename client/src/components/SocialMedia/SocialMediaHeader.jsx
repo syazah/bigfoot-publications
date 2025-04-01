@@ -45,7 +45,7 @@ const SocialMediaHeader = () => {
     <div className="w-[90%] mt-3 mb-24 flex flex-col lg:flex-row items-center gap-5 sm:p-6 shadow-lg rounded-lg">
       <div className="lg:w-[55%] flex flex-col justify-center items-center">
         <img
-          src="../../../public/HEADSLIDES/1.jpg"
+          src="HEADSLIDES/1.jpg"
           alt="Header"
           className="w-full h-auto rounded-lg"
         />
